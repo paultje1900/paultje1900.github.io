@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/rangeslider.css">
@@ -42,40 +43,32 @@
     
     <header class="site-navbar" role="banner">
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-4">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">PhysicalTherapy<span class="text-primary">.</span> </a></h1>
+            <a href="index.html" class="text-white mb-0"><img src="images\Logo_Mantelzorgmakelaar_Anneke_wit.png" width="200px"></a>
           </div>
           <div class="col-12 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
-
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html"><span>Home</span></a></li>
                 <li class="has-children">
-                  <a href="services.html"><span>Services</span></a>
+                  <a href="voor-wie.html"><span>Voor wie</span></a>
                   <ul class="dropdown arrow-top">
-                    <li><a href="#">Physical Therapy</a></li>
-                    <li><a href="#">Massage Therapy</a></li>
-                    <li><a href="#">Chiropractic Therapy</a></li>
-                    <li class="has-children">
-                      <a href="#">Dropdown</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Physical Therapy</a></li>
-                        <li><a href="#">Massage Therapy</a></li>
-                        <li><a href="#">Chiropractic Therapy</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="voor-wie.html">Professional</a></li>
+                    <li><a href="voor-wie.html">Mantelzorger</a></li>
+                    <li><a href="voor-wie.html">Werkgever</a></li>
                   </ul>
                 </li>
-                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="werkwijze.html"><span>Werkwijze</span></a></li>
+                <li><a href="over-mij.html"><span>Over mij</span></a></li>
+                <li><a href="tarieven.html"><span>Tarieven</span></a></li>
                 <li><a href="blog.html"><span>Blog</span></a></li>
                 <li class="active"><a href="contact.html"><span>Contact</span></a></li>
               </ul>
             </nav>
           </div>
-
 
           <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
@@ -86,11 +79,7 @@
       
     </header>
 
-
-
-  
-
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay site-blocks-cover-alternative" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
@@ -98,7 +87,7 @@
             
             <div class="row justify-content-center mb-4">
               <div class="col-md-10 text-center">
-                <h1 data-aos="fade-up" class="mb-5">Get  <span class="typed-words"></span></h1>
+                <h1 data-aos="fade-up" class="mb-5">Neem  <span class="typed-words"></span></h1>
               </div>
             </div>
 
@@ -112,18 +101,15 @@
         <div class="row">
           <div class="col-md-7 mb-5"  data-aos="fade">
 
-            
-
-            <form action="#" class="p-5 bg-white" style="margin-top: -150px;">
+            <form action="#" class="p-5 bg-white">
              
-
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
+                  <label class="text-black" for="fname">Voornaam</label>
                   <input type="text" id="fname" class="form-control">
                 </div>
                 <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
+                  <label class="text-black" for="lname">Achternaam</label>
                   <input type="text" id="lname" class="form-control">
                 </div>
               </div>
@@ -139,21 +125,21 @@
               <div class="row form-group">
                 
                 <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
+                  <label class="text-black" for="subject">Onderwerp</label> 
                   <input type="subject" id="subject" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                  <label class="text-black" for="message">Bericht</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Schrijf hier je bericht en ik probeer z.s.m. contact op te nemen"></textarea>
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-pill btn-primary btn-md text-white">
+                  <input type="submit" value="Verstuur bericht" class="btn btn-pill btn-primary btn-md text-white">
                 </div>
               </div>
 
@@ -163,103 +149,78 @@
           <div class="col-md-5"  data-aos="fade" data-aos-delay="100">
             
             <div class="p-4 mb-3 bg-white">
-              <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <p class="mb-0 font-weight-bold">Adres</p>
+              <p class="mb-4">5301GS, Hugo de Grootstraat 17, Zaltbommel</p>
 
-              <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+              <p class="mb-0 font-weight-bold">Telefoonnr</p>
+              <p class="mb-4"><a href="#">+31 6 10460149</a></p>
 
-              <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+              <p class="mb-0 font-weight-bold">Email adres</p>
+              <p class="mb-0"><a href="#">mzm_anneke@outlook.com</a></p>
 
             </div>
             
             <div class="p-4 mb-3 bg-white">
-              <h3 class="h5 text-black mb-3">More Info</h3>
+              <h3 class="h5 text-black mb-3">Meer Informatie</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.</p>
-              <p><a href="#" class="btn btn-primary px-4 py-2 text-white btn-pill btn-sm">Learn More</a></p>
+              <p><a href="blog.html" class="btn btn-primary px-4 py-2 text-white btn-pill btn-sm">Lees meer</a></p>
             </div>
 
           </div>
         </div>
       </div>
-    </div>
-    
+    </div> 
 
-    <div class="mt-5 block-cta-1 primary-overlay" style="background-image: url('images/hero_bg_2.jpg')">
+    <div class="block-cta-1 primary-overlay" style="background-image: url('images/hero_bg_2.jpg')">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-7 mb-4 mb-lg-0">
-            <h2 class="mb-3 mt-0 text-white">Upto 30% Discount for The First Commers</h2>
+            <h2 class="mb-3 mt-0 text-white">Volledig verzekerd door uw zorgverzekering</h2>
             <p class="mb-0 text-white lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-          <div class="col-lg-4">
-            <p class="mb-0"><a href="contact.html" class="btn btn-outline-white text-white btn-md btn-pill px-5 font-weight-bold btn-block">Contact Us</a></p>
           </div>
         </div>
       </div>
     </div>
     
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                <h2 class="footer-heading mb-4">Products</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                <h2 class="footer-heading mb-4">Features</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
-            </div>
+    <footer class="bg-white">
+      <div class="container py-5">
+        <div class="row py-3">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+            <p class="font-italic text-muted">Volg mij nu ook op verschillende social media kanalen</p>
+            <ul class="list-inline mt-4">
+              <li class="list-inline-item"><a href="https://www.facebook.com/anneke.boerma.5" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a></li>
+              <li class="list-inline-item"><a href="https://nl.linkedin.com/in/anneke-boerma-172839199" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://nl.pinterest.com/annekebn/" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
           </div>
-          <div class="col-lg-3">
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <form action="#" method="post" class="subscription">
-              <div class="input-group mb-3  d-flex align-items-stretch">
-                <input type="text" class="form-control bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
-              </div>
-            </form>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">Links</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#" class="text-muted">Home</a></li>
+              <li class="mb-2"><a href="voor-wie.html" class="text-muted">Voor wie</a></li>
+              <li class="mb-2"><a href="werkwijze.html" class="text-muted">Werkwijze</a></li>
+              <li class="mb-2"><a href="tarieven.html" class="text-muted">Tarieven</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">Links</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="over-mij.html" class="text-muted">Over mij</a></li>
+              <li class="mb-2"><a href="blog.html" class="text-muted">Blogs</a></li>
+              <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-lg-0">
+            <a href="#"><img src="images/logo.png" width="100px" class="grayscale"></a>
+            <a href="https://www.bmzm.nl/" target="_blank"><img src="images/bmzm_logo.png" width="80px" class="grayscale"></a>
+            <a href="https://www.registerplein.nl/" target="_blank"><img src="images/registerplijn_logo.png" width="100px" class="grayscale"></a>
+
           </div>
         </div>
-        <div class="row pt-5 mt-5">
-          <div class="col-12 text-md-center text-left">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
+      </div>
+      <div class="bg-light py-2">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">Gemaakt door Paul Boerma</p>
         </div>
       </div>
     </footer>
@@ -285,7 +246,7 @@
   <script src="js/typed.js"></script>
             <script>
             var typed = new Typed('.typed-words', {
-            strings: ["in touch with us"],
+            strings: ["contact op"],
             typeSpeed: 80,
             backSpeed: 80,
             backDelay: 4000,
