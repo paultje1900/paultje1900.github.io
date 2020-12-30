@@ -2877,3 +2877,29 @@ html {
 .fab:hover {
   color: lightblue;
 }
+
+.title-paragraph {
+  width:100%;
+  color: rgb(65, 65, 65);
+  margin-bottom:2px;
+}
+
+.p-paragraph {
+  margin-bottom: 40px;
+}
+
+.normale-pagina-container {
+  padding:0 400px 0 400px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .normale-pagina-container {
+    padding:0 200px 0 200px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .normale-pagina-container {
+    padding:0 50px 0 50px;
+  }
+}
