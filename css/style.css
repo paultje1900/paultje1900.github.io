@@ -2842,7 +2842,7 @@ html {
 }
 
 .site-blocks-cover-alternative {
-  max-height:700px;
+  max-height:550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2902,4 +2902,12 @@ html {
   .normale-pagina-container {
     padding:0 50px 0 50px;
   }
+}
+
+.custom-btn {
+  background-color: #F88758!important;
+}
+
+.custom-btn:hover {
+  background-color: #f66427!important;
 }
