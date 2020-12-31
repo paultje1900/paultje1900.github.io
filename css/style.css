@@ -2907,3 +2907,7 @@ html {
 .custom-btn:hover {
   background-color: #f66427!important;
 }
+
+.flip-image {
+  transform: rotateY(180deg);
+}
