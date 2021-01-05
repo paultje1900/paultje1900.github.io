@@ -165,9 +165,10 @@ jQuery(document).ready(function($) {
 		    loop: true,
 				stagePadding: 0,
 		    margin: 30,
-		    autoplay: true,
-		    nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
+			autoplay: true,
+			autoplayHoverPause:true,
+			nav: true,
+			navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
 		    responsive:{
 	        600:{
 	        	
@@ -194,11 +195,11 @@ jQuery(document).ready(function($) {
 	    center: false,
 	    items: 1,
 	    loop: true,
-			stagePadding: 0,
+		stagePadding: 0,
 	    margin: 0,
 	    smartSpeed: 1000,
-	    autoplay: true,
-	    pauseOnHover: false,
+		autoplay: true,
+	    pauseOnHover: true,
 	    nav: true,
 	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
 	  });
