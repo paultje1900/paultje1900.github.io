@@ -139,8 +139,15 @@
                     <option value="Verwezen door">Verwezen door</option>
                     <option value="Via de media">Via de media</option>
                     <option value="Via internet">Via internet</option>
-                    <option value="Anders, nl">Anders, nl</option>
+                    <option value="Anders, nl">Anders</option>
                   </select>
+                </div>
+              </div>
+
+              <div class="row form-group mb-5">
+                <div class="col-md-12">
+                  <label class="text-primary" for="anders_uitleg">Als u anders hebt ingevuld op de vorige vraag</label> 
+                  <input placeholder="optioneel" name="Uitleg anders" type="text" id="anders_uitleg" class="form-control">
                 </div>
               </div>
 
@@ -153,8 +160,15 @@
                     <option value="Telefonisch">Telefonisch</option>
                     <option value="Schriftelijk">Schriftelijk</option>
                     <option value="Via email">Via email</option>
-                    <option value="Een organisatie, nl/heeft voor mij het eerste contact gelegd">Een organisatie, nl/heeft voor mij het eerste contact gelegd</option>
+                    <option value="Een organisatie, nl/heeft voor mij het eerste contact gelegd">Een organisatie/mantelzorgmakelaar heeft voor mij het eerste contact gelegd</option>
                   </select>
+                </div>
+              </div>
+
+              <div class="row form-group mb-5">
+                <div class="col-md-12">
+                  <label class="text-primary" for="organisatie_uitleg">Welke Organisatie? Als u organisatie hebt ingevuld op de vorige vraag</label> 
+                  <input placeholder="optioneel" name="Organisatie anders" type="text" id="organisatie_uitleg" class="form-control">
                 </div>
               </div>
 
@@ -428,14 +442,16 @@
   </script>
 
   <script type="text/javascript">
+  const monthNames = ["Januari", "Februari", "Maart", "April", "Mei", "Juni","Juli", "Augustus", "September", "Oktober", "November", "December"];
+
     function getDate()
     {
         var today = new Date();
         var dd = today.getDate();
-        var mm = today.getMonth()+1;
+        var mm = monthNames[today.getMonth+1];
         var yyyy = today.getFullYear();
         if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}
-        today = yyyy+""+mm+""+dd;
+        today = dd+"-"+mm+"-"+yyyy;
     
         document.getElementById("datum").value = today;
     }
