@@ -39,6 +39,9 @@ h1, h2, h3, h4, h5,
 .text-black {
   color: #000 !important;
 }
+.text-primary {
+  color: #d88c6c !important;
+}
 
 .bg-black {
   background: #000 !important;
@@ -2360,8 +2363,8 @@ h1, h2, h3, h4, h5,
   font-weight: bold;
 }
 
-.range-output:after {
-  content: "Km";
+.range-output:before {
+  content: "Ik beoordeel u met een: ";
   font-weight: normal;
 }
 
@@ -2951,4 +2954,8 @@ html {
   padding: 5px;
   font-size: 14px;
   color: #ffc4a5;
+}
+
+.placeholder-color {
+  color: lightgray;
 }

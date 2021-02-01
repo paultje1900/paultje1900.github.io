@@ -1296,8 +1296,8 @@
 }
 .range-output {
 	font-weight: bold;
-	&:after {
-		content: "Km";
+	&:before {
+		content: "Ik beoordeel u met een: ";
 		font-weight: normal;
 	}
 }
