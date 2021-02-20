@@ -43,6 +43,11 @@ h1, h2, h3, h4, h5,
   color: #d88c6c !important;
 }
 
+.text-grey {
+  color: lightslategrey !important;
+}
+
+
 .bg-black {
   background: #000 !important;
 }
@@ -2960,7 +2965,24 @@ html {
   color: lightgray;
 }
 
-.video {
-  height: 100%;
+#video {
+  text-align:center;
+  width:100%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
   width: 100%;
+  margin-top: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: whitesmoke;
 }
