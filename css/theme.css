@@ -1,0 +1,126 @@
+/* =================================================================
+   Mantelzorgmakelaar Anneke — theme.css
+   Aanvulling op Tailwind (Play CDN). Restrained radii, premium motion.
+   ================================================================= */
+
+html { scroll-behavior: smooth; }
+
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* ---------- buttons (subtle radius, not pill) ---------- */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: .5rem;
+  border-radius: 6px; background: #256b64; color: #fff !important;
+  font-weight: 600; font-size: .95rem; padding: .8rem 1.5rem;
+  text-decoration: none;
+  transition: background .25s ease, box-shadow .25s ease;
+}
+.btn-primary:hover { background: #1e554f; color: #fff !important; box-shadow: 0 6px 16px rgba(17,48,45,.16); }
+
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: .5rem;
+  border-radius: 6px; background: #fff; color: #1e554f;
+  font-weight: 600; font-size: .95rem; padding: .8rem 1.5rem;
+  border: 1.5px solid #cfe3df; transition: border-color .25s, color .25s, transform .25s cubic-bezier(.22,1,.36,1);
+}
+.btn-ghost:hover { border-color: #256b64; color: #256b64; transform: translateY(-2px); }
+/* keep buttons readable when used as links inside prose */
+.prose-care a.btn-primary { color: #fff !important; text-decoration: none; }
+.prose-care a.btn-ghost { color: #1e554f; text-decoration: none; }
+
+.btn-white-outline {
+  display: inline-flex; align-items: center; gap: .5rem;
+  border-radius: 6px; border: 1.5px solid rgba(255,255,255,.85); color: #fff;
+  font-weight: 600; font-size: .95rem; padding: .75rem 1.6rem; transition: background .3s, color .3s;
+}
+.btn-white-outline:hover { background: #fff; color: #1e554f; }
+
+/* ---------- nav: underline-only hover ---------- */
+.nav-link {
+  position: relative; display: inline-block;
+  padding: .35rem .15rem; margin: 0 .7rem;
+  font-size: 15px; font-weight: 500; color: #51635f;
+  transition: color .25s;
+}
+.nav-link::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px;
+  background: #256b64; transform: scaleX(0); transform-origin: left;
+  transition: transform .32s cubic-bezier(.22,1,.36,1);
+}
+.nav-link:hover { color: #11302d; }
+.nav-link:hover::after, .nav-link.is-active::after { transform: scaleX(1); }
+.nav-link.is-active { color: #11302d; }
+
+/* ---------- form fields ---------- */
+.lbl { display: block; font-weight: 600; font-size: .92rem; margin-bottom: .4rem; color: #17211f; }
+.fld {
+  width: 100%; font: inherit; font-size: 1rem;
+  padding: .7rem .9rem; border: 1px solid #d8e3e0; border-radius: 6px;
+  background: #fff; color: #17211f; transition: border-color .2s, box-shadow .2s;
+}
+.fld:focus { outline: none; border-color: #34827a; box-shadow: 0 0 0 3px rgba(52,130,122,.18); }
+textarea.fld { min-height: 150px; resize: vertical; }
+
+/* ---------- footer logos: render white ---------- */
+.footer-logo { filter: brightness(0) invert(1); opacity: .8; transition: opacity .25s; }
+.footer-logo:hover { opacity: 1; }
+
+/* ---------- prose (content pages) ---------- */
+.prose-care { color: #334b47; line-height: 1.75; font-size: 1.05rem; }
+.prose-care p { margin: 0 0 1.15em; }
+.prose-care h2 { color: #17211f; font-weight: 700; font-size: 1.7rem; margin: 1.9em 0 .5em; letter-spacing: -.01em; }
+.prose-care h2:first-child { margin-top: 0; }
+.prose-care h3 { color: #1e554f; font-weight: 700; font-size: 1.25rem; margin: 1.6em 0 .4em; }
+.prose-care a { color: #256b64; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.prose-care a:hover { color: #1a433f; }
+.prose-care ul { margin: 0 0 1.3em; padding-left: 0; list-style: none; }
+.prose-care ul li { position: relative; padding-left: 30px; margin-bottom: .55em; }
+.prose-care ul li::before {
+  content: ""; position: absolute; left: 0; top: .58em;
+  width: 17px; height: 17px; background: #34827a; border-radius: 4px;
+  -webkit-mask: var(--check) center/11px no-repeat; mask: var(--check) center/11px no-repeat;
+}
+.prose-care ol { margin: 0 0 1.3em; padding-left: 1.3em; }
+.prose-care ol li { margin-bottom: .5em; }
+.prose-care table { width: 100%; border-collapse: collapse; margin: 1.5em 0; }
+.prose-care th { background: #1e554f; color: #fff; text-align: left; font-weight: 600; }
+.prose-care th, .prose-care td { padding: 13px 16px; border-bottom: 1px solid #e2ebe9; vertical-align: top; }
+.prose-care figure { margin: 1.6em 0; }
+.prose-care figure img { border-radius: 8px; }
+.prose-care figcaption { font-size: .85rem; color: #6b7d79; margin-top: .5em; }
+
+/* legal article numbering */
+.legal-article { scroll-margin-top: 110px; }
+
+/* full-width tariff table with distinguishable rows */
+.t-wide { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid #d8e3e0; border-radius: 8px; overflow: hidden; }
+.t-wide th { background: #1e554f; color: #fff; text-align: left; font-weight: 600; padding: 14px 18px; }
+.t-wide td { padding: 14px 18px; border-top: 1px solid #e2ebe9; }
+.t-wide tbody tr:nth-child(odd) td { background: #f5faf9; }
+.t-wide tbody tr:nth-child(even) td { background: #ffffff; }
+
+/* accent underline for headings (huisstijl thread) */
+.accent-rule { position: relative; padding-bottom: .6rem; }
+.accent-rule::after { content: ""; position: absolute; left: 0; bottom: 0; width: 52px; height: 3px; border-radius: 3px; background: #c9763a; }
+
+:root {
+  --check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+
+/* ---------- premium motion ---------- */
+.reveal {
+  opacity: 0; transform: translateY(14px);
+  transition: opacity .55s ease, transform .55s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* media wrapper (no hover zoom) */
+.zoom-wrap { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .btn-primary::after { display: none; }
+}
