@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Geen indexering van losse bestanden
+Disallow: /pdf-bestanden/
+Disallow: /debug.log
+
+Sitemap: https://mzm-anneke.nl/sitemap.xml
